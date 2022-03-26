@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca4a10c9-244f-4f41-9442-5da3ed1d93f1">
+  <producedTypes>
+    <objectType typeId="5f7b75c5-5b6e-4d34-bd01-c825fecda898" valueTypeId="fd6e2cbd-4028-4658-b752-86eebf7cc5d2"/>
+    <refType typeId="3622c6fc-a08e-43a2-93b0-cdbb3323189d" valueTypeId="fa6180c6-81fc-4186-84bb-20f078704355"/>
+    <selectionType typeId="31206ef0-079f-4454-9d3c-9d20aabe2fd0" valueTypeId="fdd18fe1-19e3-49c3-b377-d45425c52d64"/>
+    <listType typeId="dc092479-789d-4493-9813-d5525283797b" valueTypeId="b2b43995-a170-4698-bdeb-6c01d75ce7f0"/>
+    <managerType typeId="ba0772bb-b62c-474f-92a6-494a52e9f006" valueTypeId="b4d36f74-c8d0-4fea-81e7-b0cc42f4db6a"/>
+  </producedTypes>
+  <name>Продажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Продажи.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="c4ac5b91-1163-41ba-a95b-a62e5a58a842">
+    <producedTypes>
+      <objectType typeId="d797096e-b0e9-4ef2-914b-c86330cdebb7" valueTypeId="a5c8646c-9458-4960-a7b6-f6fd191ed25a"/>
+      <rowType typeId="e6aa414c-4f2a-49ba-b22b-6deac11ddc58" valueTypeId="59db114d-b121-4c4c-a165-96437eab142b"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="ef4e1faf-b685-4ad8-b34b-2f923adbfa91">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Товары</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="417b90fd-0ff8-45a3-bdb2-da744ddad369">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d6014704-f8e8-4328-b466-caca309b3883">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9b75a7dd-f53e-4520-b080-68e03ac047c1">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
